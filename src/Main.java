@@ -1,13 +1,38 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-void main() {
-    //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-    // to see how IntelliJ IDEA suggests fixing it.
-    IO.println(String.format("Hello and welcome!"));
+public class Main {
+    public static void main(String args[]) {
+        double amountInUSD = 100.0;
+        double exchangeRateUSDToEUR = 0.85;
 
-    for (int i = 1; i <= 5; i++) {
-        //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-        // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-        IO.println("i = " + i);
+        double afterConversionToEUR = amountInUSD * exchangeRateUSDToEUR;
+
+        double expenditureInEUR = 55.0;
+
+        double afterExpenditureInEUR = afterConversionToEUR - expenditureInEUR;
+
+        double afterConversionToUSD = afterExpenditureInEUR / exchangeRateUSDToEUR;
+
+        System.out.println("Initial amount in USD: " + amountInUSD);
+        System.out.println("Amount in EUR after conversion: " + afterConversionToEUR);
+        System.out.println("Amount in EUR after expenditure: " + afterExpenditureInEUR);
+        System.out.println("Amount in USD after converting back: " + afterConversionToUSD);
+
+// Initial amount in USD
+
+
+        System.out.println("Initial amount in USD: " + amountInUSD);
+
+        // Convert USD to EUR
+        amountInUSD *= exchangeRateUSDToEUR; // Equivalent to amountInUSD = amountInUSD * exchangeRateUSDToEUR;
+        System.out.println("Amount in EUR after conversion: " + amountInUSD);
+
+        // Expenditure of 55 EURO
+        amountInUSD -= 55;
+        System.out.println("Amount in EUR after expenditure: " + amountInUSD);
+
+        // Convert EUR back to USD
+        amountInUSD /= exchangeRateUSDToEUR; // Equivalent to amountInUSD = amountInUSD / exchangeRateEURToUSD;
+        System.out.printf("Amount in USD after converting back: %.2f", amountInUSD);
+
     }
 }
+
