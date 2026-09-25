@@ -1,5 +1,6 @@
 public class Main {
     public static void main(String args[]) {
+        System.out.println("Hello World!");
         double amountInUSD = 100.0;
         double exchangeRateUSDToEUR = 0.85;
 
@@ -35,4 +36,3 @@ public class Main {
 
     }
 }
-
