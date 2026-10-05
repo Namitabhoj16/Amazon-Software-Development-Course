@@ -32,8 +32,7 @@ public class DataTypeDemo {
         //What is it used for?
             //1. Rarely. It's a middle ground between byte and int, used to save memory in big arrays of medium-sized numbers
             // (like 1 million years or prices in cents under 32,000). Most developers just use int.
-
-        //-----------------------------------------------------------------------------------------------------------------//
+        // -----------------------------------------------------------------------------------------------------------------//
 
         // 3. int
             //standard whole-number box.
