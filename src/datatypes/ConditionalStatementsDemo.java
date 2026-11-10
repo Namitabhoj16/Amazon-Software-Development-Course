@@ -6,12 +6,9 @@ public class ConditionalStatementsDemo {
     public static void main(String []args) {
         //Example 1
 
-        /** TODO 2: Create a Scanner variable named "keyboard" **/
         Scanner keyboard = new Scanner(System.in);
 
-        /** TODO 3: A variable for getting the day of the week is given below **/
-        /**         Initialize the variable to have the value 1 **/
-        /** 1- is Monday, 2- is Tuesday and so on **/
+
 //        System.out.print("/********** MENU *****************\n" +
 //                "These are the choices for week of the day. \n" +
 //                "Please enter only values from 1-7:\n" +
